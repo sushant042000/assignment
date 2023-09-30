@@ -46,10 +46,10 @@ function AllUsers() {
       {allUsers ? (
         <div className="w-[80vw]">
           <h1 className="text-2xl font-bold mb-4 text-center">User List</h1>
-          <div className="overflow-x-auto">
-            <table className="  rounded-md flex flex-col justify-center items-center table-auto ">
+          <div className="">
+            <table className=" w-[80vw] rounded-md flex flex-col justify-center items-center table-auto ">
               <thead>
-                <tr className="bg-gray-700 text-white">
+                <tr className="bg-purple-700 text-white w-[80vw]">
                   <th className="px-4 py-2">Name</th>
                   <th className="px-4 py-2">Age</th>
                   <th className="px-4 py-2">Gender</th>
@@ -65,8 +65,8 @@ function AllUsers() {
                       key={index}
                       className={
                         index % 2 !== 0
-                          ? "bg-gray-100 cursor-pointer"
-                          : "bg-gray-300 cursor-pointer"
+                          ? "bg-purple-100 cursor-pointer"
+                          : "bg-purple-300 cursor-pointer"
                       }
                       onClick={() => handleClick(user.name1)}
                     >

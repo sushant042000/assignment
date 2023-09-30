@@ -44,8 +44,8 @@ function Login() {
           />
         </div>
       ) : (
-        <div>
-          <div className="bg-white p-8 rounded shadow-md w-80">
+        <div className="bg-purple-500">
+          <div className=" p-8 rounded shadow-md w-80 bg-violet-300">
             <h2 className="flex text-2xl font-semibold mb-4 items-center justify-center">
               Login
             </h2>
@@ -71,12 +71,14 @@ function Login() {
                 onChange={(e) => setPassword(e.target.value)}
               />
             </div>
+            <div className="flex justify-center items-center">
             <button
-              className="bg-green-500 content-center text-white py-2 px-4 rounded  hover:bg-green-600"
+              className="bg-purple-500 content-center text-white py-2 px-4 rounded  hover:bg-purple`-600"
               onClick={handleLogin}
             >
               Login
             </button>
+            </div>
           </div>
         </div>
       )}

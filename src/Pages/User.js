@@ -56,10 +56,10 @@ function UserPage() {
   return (
     <div className="w-[100vw] h-[100vh] flex flex-col justify-center items-center">
       {user ? (
-        <div>
-          <h1 className="text-2xl text-gray-700 text-center font-bold mb-4">User Page</h1>
-          <div className="mb-4">
-            <label className="block text-gray-700 font-bold">User Name</label>
+        <div >
+          <h1 className="text-2xl text-gray-700 text-center font-bold mb-4">User Data</h1>
+          <div className="mb-4 flex gap-2">
+            <label className=" w-[10vw] block text-gray-700 font-bold ">Name :</label>
             <input
               type="text"
               name="name1"
@@ -70,11 +70,11 @@ function UserPage() {
                   [e.target.name]: e.target.value,
                 }))
               }
-              className="border border-gray-300 rounded-md px-3 py-2 w-[20vw] "
+              className="border border-gray-300 rounded-md px-3 text-center py-2 w-full lg:w-[20vw] text-purple-950 text-lg font-medium bg-gray-300"
             />
           </div>
-          <div className="mb-4">
-            <label className="block text-gray-700 font-bold">User Age</label>
+          <div className="mb-4 flex gap-2">
+            <label className=" w-[10vw] block text-gray-700 font-bold ">Age :</label>
             <input
               type="text"
               name="age"
@@ -85,11 +85,11 @@ function UserPage() {
                   [e.target.name]: e.target.value,
                 }))
               }
-              className="border border-gray-300 rounded-md px-3 py-2  w-[20vw] "
+              className="border border-gray-300 rounded-md px-3 py-2 w-full lg:w-[20vw] text-center  text-purple-950 text-lg font-medium bg-gray-300"
             />
           </div>
-          <div className="mb-4">
-            <label className="block text-gray-700 font-bold">User Gender</label>
+          <div className="mb-4 flex gap-2">
+            <label className=" w-[10vw] block text-gray-700 font-bold ">Gender :</label>
             <input
               type="text"
               name="gender"
@@ -100,13 +100,13 @@ function UserPage() {
                   [e.target.name]: e.target.value,
                 }))
               }
-              className="border border-gray-300 rounded-md px-3 py-2  w-[20vw] "
+              className="border border-gray-300 rounded-md px-3 py-2 text-center w-full lg:w-[20vw]  text-purple-950 text-lg font-medium bg-gray-300 "
             />
           </div>
-          <div className="mb-4">
-            <label className="block text-gray-700 font-bold">
-              User Company Name
-            </label>
+          <div className="mb-4 flex gap-2">
+           <label className="w-[10vw] flex justify-center  items-center  text-gray-700 font-bold ">
+            Company Name:
+          </label>
             <input
               type="text"
               name="company_name"
@@ -117,13 +117,13 @@ function UserPage() {
                   [e.target.name]: e.target.value,
                 }))
               }
-              className="border border-gray-300 rounded-md px-3 py-2  w-[20vw] "
+              className="border border-gray-300 rounded-md px-3 py-2 text-center  w-full lg:w-[20vw]  text-purple-950 text-lg font-medium bg-gray-300 "
             />
           </div>
          <div  className="flex justify-center items-center">
          <button
          onClick={handleSave}
-         className=" bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+         className=" w-full lg:w-[20vw] mt-8 bg-purple-700 hover:bg-purple-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
        >
          Save
        </button>

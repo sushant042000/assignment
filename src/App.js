@@ -10,11 +10,12 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-       <Route path="/" element={<Login/>}/>
-       <Route path="/all" element={<Protected component={<AllUsers/>}/>}/>
-       <Route path="/user/:name" element={<Protected component={<UserPage/>}/>}/>
-       
-       
+        <Route path="/" element={<Login />} />
+        <Route path="/all" element={<Protected component={<AllUsers />} />} />
+        <Route
+          path="/user/:name"
+          element={<Protected component={<UserPage />} />}
+        />
       </Routes>
       <Toaster />
     </BrowserRouter>
